@@ -76,6 +76,7 @@ allow_tags = [
     'p',
     'img',
 ]
+
 # 允许的属性,这样设置将不会过滤所有标签的class属性,和a标签的href,rel属性....
 allow_attrs = {
     '*': ['class'],
