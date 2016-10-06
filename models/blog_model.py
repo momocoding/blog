@@ -76,8 +76,8 @@ class Blog(db.Model, ModelMixin):
     def blog_valid(self):
         if len(self.title) == 0 or len(self.content) == 0:
             return False, None, '标题和内容不能为空'
-        elif len(self.title) > 30:
-            return False, None, '标题不能超过30字'
+        elif len(self.title) > 50:
+            return False, None, '标题不能超过50字'
         else:
             self.save()
             return True, self.to_dict(), '提交成功'
