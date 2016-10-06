@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %} 发表博客 {% endblock %}
+{% block head %}
+{{ super() }}
+<style>
+    input.blog-input-title {
+        width: 100%;
+        height: 40px;
+        border: 1px solid #e3e3e3;
+    }
+    textarea.blog-textarea-summary {
+        width: 100%;
+        height: 70px;
+    }
+    .blog-input-name, .blog-add-sort {
+        color: white;
+        padding-left: 10px;
+    }
+    textarea {
+        border: 1px solid #e3e3e3;
+        padding: 0;
+        width: 100%;
+        height: 600px;
+    }
+    .blog-input-name {
+        top: 10px;
+
+    }
+    .blog-add-title, .blog-add-sort, .blog-add-content, .blog-add-summary, .blog-button-add {
+        margin-top: 15px;
+    }
+    .blog-add-sort, .blog-button-add {
+        background: lightskyblue;
+        color: white;
+        font-size: 20px;
+        padding: 6px 8px;
+        border-radius: 3px;
+    }
+    .input-space {
+        padding: 4px 0px;
+        font-size: 20px;
+    }
+
+
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="all-container">
+    <div class="blog-add-title">
+        <input type="text" class="blog-input-title input-space" placeholder="  Title">
+    </div>
+    <div class="blog-add-summary">
+        <textarea class="blog-textarea-summary input-space" placeholder=" 摘要..." ></textarea>
+    </div>
+    <div class="blog-add-content">
+        <textarea class="blog-textarea-content input-space" placeholder=" 内容..." ></textarea>
+    </div>
+    <div class="blog-add-sort">
+        <span class="blog-input-name">类别:</span>
+        <input type="radio" class="blog-input-sort" name="sort" value="Python" checked>Python
+        <input type="radio" class="blog-input-sort" name="sort" value="JavaScript">JavaScript
+        <input type="radio" class="blog-input-sort" name="sort" value="Java">Java
+        <input type="radio" class="blog-input-sort" name="sort" value="数据库">数据库
+        <input type="radio" class="blog-input-sort" name="sort" value="掏粪心得">掏粪心得
+    </div>
+    <button class="blog-button-add right">发表博客</button>
+</div>
+{% endblock %}

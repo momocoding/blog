@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册/登录</title>
+    <link rel="stylesheet" href="/static/css/user.css">
+    <link rel="stylesheet" media="screen" href="/static/css/style.css">
+    <style>
+        body {
+            margin: 0;
+            background: url('/static/images/bg.jpg') no-repeat fixed 0px 0px;
+            background-size:100% 100%;
+        }
+        #particles-js {
+            position: absolute;
+            z-index: -1;
+        }
+        #allcontainer {
+            padding-top: 160px;
+        }
+        a, a:hover {
+            text-decoration: none;
+            border-radius: 3px;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+<div id="particles-js"></div>
+<div id="allcontainer">
+    <div id="header" class="clear-fix">
+        <div class="left">
+            <!--<img src="/static/images/logo.png" alt="">-->
+        </div>
+        <div class="left">
+            <h1><a href={{ url_for('blog.all') }}>博客说</a></h1>
+        </div>
+    </div>
+    <div class="center clear-fix">
+        <form action="/user/register" method="post">
+            <input name="username" placeholder=" 请输入用户名...">
+            <br>
+            <input name="password" placeholder=" 请输入密码...">
+            <br>
+            <div class="right clear-fix">
+                <button>注册</button>
+            </div>
+        </form>
+        <br>
+        <form action="/user/login" method="post">
+            <input name="username" placeholder=" 请输入用户名...">
+            <br>
+            <input name="password" placeholder=" 请输入密码...">
+            <br>
+            <div class="right clear-fix">
+                <button>登录</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/static/js/particles.js"></script>
+<script src="/static/js/app.js"></script>
+</body>
+</html>

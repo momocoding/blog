@@ -1,0 +1,287 @@
+{% extends "base.html" %}
+{% block title %}博客{% endblock %}
+{% block head %}
+{{ super() }}
+
+<style>
+    .blog-cell {
+        border: solid 1px #e3e3e3;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        /*border-radius: 6px;*/
+        /*padding: 5px 10px 0px;*/
+        word-break: normal;
+        background: white;
+        position: relative;
+    }
+     .blog-cell-all-content, .blog-cell-summary{
+        width: 800px;
+        line-height: 1.7em;
+         padding: 5px 20px;
+    }
+
+    .blog-cell-all-content:hover, .blog-cell-summary:hover {
+        background: rgba(245, 248, 250, 0.47);
+    }
+    .blog-button-summary, .blog-button-content {
+        position: relative;
+        bottom: -26px;
+        /* border-radius: 3px; */
+        /* padding: 4px 18px; */
+        right: 20px;
+        height: 31.5px;
+        width: 100px;
+        font-weight: 800;
+    }
+    .blog-cell-all-content h2, .blog-cell-summary h2 {
+        margin: 8px 0px;
+        padding: 0;
+    }
+    .blog-cell-content {
+        word-break: break-all;
+        /*margin: 10px;*/
+        margin-bottom: 0px;
+    }
+    .blog-cell-info {
+        margin: 10px;
+    }
+    .blog-info-a {
+        color: #62a6e4;
+        font-size: 15px;
+        font-family: Monaco, 'MonacoRegular', 'Courier New', monospace !important;
+    }
+    span.blog-cell-comment {
+        color: #8899a6;
+        font-size: 14px;
+    }
+    .blog-cell-sort.left {
+        font-size: 15px;
+    }
+    .blog-comment {
+        clear: both;
+        margin-top: 35px;
+    }
+    .blog-comment-commit {
+        border: 1px solid #e3e3e3;
+    }
+    input.blog-comment-input {
+        /*border: none;*/
+        height: 30px;
+        width: 762px;
+        border: 1px solid #e3e3e3;
+    }
+    button.blog-comment-button {
+        width: 74px;
+        height: 34px;
+        padding: 0px;
+    }
+    .blog-comment-cell {
+
+        border-top: 1px solid #e3e3e3;
+        padding: 6px 20px;
+    }
+    .blog-cell-sort.left {
+        padding-bottom: 17px;
+        margin-left: 10px;
+    }
+    .hide {
+        display: none;
+    }
+    .padding-10 {
+        padding: 0px 10px;
+    }
+    .blog-cell-avatar {
+        position: absolute;
+        right: -4px;
+        min-width: 10px;
+        padding: 9px 38px 5px;
+        border-left: 1px solid #e3e3e3;
+        text-align: center;
+    }
+    .gua-hover:hover {
+        /*border-bottom-color: transparent;*/
+        color: #3ba0f1 !important;
+    }
+    .blog-cell-title {
+        border-bottom: 1px solid #e3e3e3;
+    }
+    .blog-cell-avatar img {
+        width: 50px;
+        height: 50px;
+        /* padding-bottom: 1px; */
+        /* padding-top: 5px; */
+        border-radius: 30px;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+    span.blog-cell-name {
+        font-weight: bold;
+    }
+    .blog-cell-name a {
+        color: #3c3b3b;
+    }
+    .comment-hover:hover, .blog-sub-top:hover {
+        /*background: rgba(135, 201, 250, 0.71);*/
+        background: #a0d9fd;
+        color: white;
+        border-radius: 0;
+        outline: 1px solid #a0d9fd;
+    }
+    a.blog-cell-update {
+        padding: 7px 10px;
+        margin-right: 124px;
+        color: #b3b2b2;
+        border: 1px solid #e3e3e3;
+        border-radius: 0px;
+        font-size: 15px;
+        position: relative;
+        /*font-weight: bold;*/
+    }
+    button.blog-button-delete {
+        padding: 6px 10px;
+        position: relative;
+        right: 4px;
+        font-size: 15px;
+        top: -6px;
+        color: #b3b2b2;
+    }
+    .blog-cell-all-content img, .blog-cell-summary img {
+        height: 512px;
+        max-width: 800px;
+    }
+    .blog-comment h2 {
+        padding: 10px 17px;
+        border-top: 1px solid #e3e3e3;
+        color: rgba(33, 150, 243, 0.72);
+        margin: 0px;
+    }
+    .sidebar {
+        /*outline: 3px solid lightskyblue;*/
+        width: 245px;
+        /*margin-top: 8px;*/
+        /*padding: 10px;*/
+    }
+    .sub-title {
+        margin-top: 5px;
+        font-size: 25px;
+        color: rgba(33, 150, 243, 0.88);
+        border: 1px solid #e3e3e3;
+        padding: 10px 10px;
+        background: white;
+        font-weight: bold;
+        width: 225px;
+    }
+    .blog-sub-top {
+        padding: 8px 4px 8px 10px;
+        /* height: 10px; */
+        width: 231px;
+        /* overflow: hidden; */
+        background: white;
+        border: 1px solid #e3e3e3;
+        border-top: none;
+        color: #3c3b3b;
+        font-weight: bold;
+    }
+    .blog-sub-top a {
+        line-height: 1.2em;
+    }
+
+
+
+</style>
+{% endblock %}
+{% block content %}
+<div id="all-container">
+    <div id="main">
+        <div class="left">
+            {% for b in blogs %}
+            <div class="blog-cell clear-fix" data-id="{{ b.id }}">
+                <div class="blog-cell-avatar">
+
+                    <span class="blog-cell-name">
+                        <a class="gua-hover" href={{ url_for('blog.user_index', username=b.user_id) }}>
+                            <img src="{{ b.user_avatar }}" alt="avatar">
+                            <br>
+                            {{ b.user_id }}
+                        </a>
+                    </span>
+                </div>
+                <div class="blog-cell-title">
+                    <h2 class="gua-hover">{{ b.title }}</h2>
+                </div>
+                <div class="blog-cell-info padding-10 ">
+                    <span class="blog-cell-time">
+                        <a href="" class="blog-info-a gua-hover">{{ b.created_time }}</a>
+                    </span>
+
+                    <span class="blog-cell-comment">
+                        ·<span class="blog-info-a blog-comment-a gua-hover">{{ b.comment_count }}条评论</span>
+                    </span>
+                    <span class="blog-cell-read-counter">
+                        ·<span class="blog-info-a">{{ b.read_count }}</span>人阅读
+                    </span>
+                </div>
+                <div class="blog-cell-content clear-fix ">
+                    <div class="blog-cell-summary markdown-body">{{ b.summary|safe }}
+                    </div>
+                    <div class="right clear-fix">
+                        <button class="blog-button-content gua-hover">阅读全文</button>
+                    </div>
+                </div>
+                <div class="blog-cell-sort left padding-10">
+                    Posted in <a href="" class="blog-info-a">{{ b.sort }}</a>
+                </div>
+
+                {% if current.username == b.user_id or current.id == 1 %}
+                <div class="blog-cell-update right">
+                    <a class="blog-cell-update blue-hover" href={{ url_for('.edit_view', id=b.id) }}>更新</a>
+                    <div class="blog-cell-delete left">
+                        <button class="blog-button-delete blue-hover">删除</button>
+                    </div>
+                </div>
+                {% endif %}
+                <div class="blog-comment hide clear-fix" id="blog-comment-id">
+                    <div class="blog-comment-h2">
+                    <h2 class="">评论</h2>
+                    </div>
+                    {% for c in b.comments %}
+                    <div class="blog-comment-cell comment-hover clear-fix">
+                        <div class="blog-comment-content left ">
+                           {{ c.user_id }}: {{ c.content }}
+                        </div>
+                        <div class="blog-comment-time right">
+                            {{ c.created_time }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <div class="blog-comment-commit clear-fix">
+                        <input type="text" class="blog-comment-input clear-fix left" placeholder="请输入评论...">
+                        <button class="blog-comment-button gua-hover right">评论</button>
+                    </div>
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="right">
+            <div class="sidebar">
+                {% if tops != None %}
+                <div class="sub-title">
+                    TOP
+                </div>
+                <div class="blog-top">
+                    {% for b in tops %}
+                    <div class="blog-sub-top left">
+                        <a href="">{{ b.title }}</a>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</div>
+{% endblock %}
+</body>
+</html>

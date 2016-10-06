@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    {% block head %}
+    <link rel="stylesheet" href="/static/css/alertify.css">
+    <link rel="stylesheet" media="screen" href="/static/css/style.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+    <!--markdown-->
+    <link href="//cdn.bootcss.com/github-markdown-css/2.4.0/github-markdown.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/codemirror/5.18.2/codemirror.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/codemirror/5.18.2/theme/material.css" rel="stylesheet">
+    <!--<script src="//cdn.bootcss.com/marked/0.3.6/marked.min.js"></script>-->
+    <script src="//cdn.bootcss.com/codemirror/5.18.2/codemirror.min.js"></script>
+    <!--<script src="//cdn.bootcss.com/codemirror/5.18.2/mode/javascript/javascript.min.js"></script>-->
+    <!--<script src="//cdn.bootcss.com/codemirror/5.18.2/mode/python/python.min.js"></script>-->
+
+    <script src="/static/js/alertify.min.js"></script>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/blog.js"></script>
+    <style>
+        html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        body{
+            background: #f5f8fa; !important;
+            margin: 0px;
+            padding: 0px;
+            /*background: url('/static/images/bg.jpg') no-repeat fixed 0px 0px;*/
+            background-size: cover;
+        }
+        .clear-fix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #all-container{
+            width: 1100px;
+            margin: 0px auto;
+            color: #8899a6;
+        }
+        .left {
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .flex {
+            display: flex;
+        }
+        .flex-1 {
+            flex-grow: 1;
+        }
+        .flex-9 {
+            flex-grow: 9;
+        }
+        #header-bg {
+            background: white;
+            height: 60px;
+            margin-bottom: 10px;
+            /*border-bottom: 1px solid gainsboro;*/
+        }
+        #header {
+            color: #8899a6;
+            max-width: 1200px;
+            margin: 0px auto;
+        }
+        #header span {
+            font-size: 20px;
+        }
+        h1 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #2196f3;
+        }
+        h2 {
+            padding: 10px 0px 15px 20px;
+            color: #3c3b3b;
+        }
+        .shadow {
+            box-shadow: 2px 3px #f1f2f3;
+        }
+        button {
+            font-size: 15px;
+            border: none;
+            color: #3c3b3b;
+            background: none;
+            border: 1px solid #e3e3e3;
+        }
+        a, a:hover {
+            text-decoration: none;
+            border-radius: 3px;
+            color: inherit;
+        }
+        .blog-header-right {
+            height: 58px;
+            line-height: 58px;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 20px;
+        }
+        .blog-header-right:hover, .blog-header-hide a:hover {
+            background: lightskyblue;
+            color: white;
+            border-radius: 0;
+        }
+        .blog-header-hide {
+            width: 80px;
+            position: absolute;
+            display: none;
+            margin-left: 32px;
+        }
+        .blog-header-hide a {
+            width: 63px;
+            height: 30px;
+            line-height: 30px;
+            padding: 5px 6px 8px;
+            background: white;
+            font-size: 14px;
+        }
+        img.blog-header-avatar {
+            position: absolute;
+            left: 32px;
+            top: 0px;
+            height: 60px;
+        }
+        .right.weibo-header-sub-profile {
+            /*width: 123.5px;*/
+            position: relative;
+            height: 60px;
+        }
+        a.blog-header-user {
+            display: inline-block;
+            /*padding-left: 6px;*/
+            height: 55px;
+            line-height: 55px;
+            font-size: 20px;
+        }
+        .blue-hover:hover{
+            background: lightskyblue;
+            color: white;
+            border: 1px solid lightskyblue;
+        }
+        #particles-js {
+            position: absolute;
+            z-index: -1;
+        }
+        .blog-header-login {
+            width: 120px;
+        }
+    </style>
+    <script>
+        var log = function(){
+            console.log(arguments)
+        }
+        $(document).ready(function(){
+            $('.weibo-header-sub-profile').on('mouseover', function(){
+                var hide = $(this).find('.blog-header-hide')
+                hide.show()
+            })
+            $('.weibo-header-sub-profile').on('mouseout', function(){
+                var hide = $(this).find('.blog-header-hide')
+                hide.hide()
+            })
+        })
+    </script>
+    {% endblock %}
+</head>
+<body>
+
+<div id="header-bg" class="shadow">
+    <div id="header" class="">
+        <div class="left">
+            <img src="/static/images/logo.png" alt="">
+        </div>
+        <div class="left">
+            <h1><a href={{ url_for('blog.all') }}>博客说</a></h1>
+        </div>
+        <div class="right weibo-header-sub-profile">
+            <div class="blog-header-login">
+            {% if current != None %}
+            <a class="blog-header-user" href={{ url_for("blog.user_index", username=current.username) }}><img class="blog-header-avatar" src="{{ current.avatar }}" alt="avatar">
+            </a>
+            <div class="blog-header-hide">
+                {% if current.id == 1 %}
+                <div class="left">
+                    <a href={{ url_for("blog.add_view") }}>发布博客</a>
+                </div>
+                {% endif %}
+                <div class="left">
+                    <a href="#">修改密码</a>
+                </div>
+                <div class="left">
+                    <a href={{ url_for("user.logout") }}>退出登录</a>
+                </div>
+            </div>
+            {% else %}
+
+                <div class="right weibo-header-sub">
+                    <a class="blog-header-right" href={{ url_for("user.login_view") }}>登录</a>
+                </div>
+                <div class="right weibo-header-sub">
+                    <a class="blog-header-right" href={{ url_for("user.login_view") }}>注册</a>
+                </div>
+            {% endif %}
+            </div>
+        </div>
+        <div class="right weibo-header-sub">
+            <a class="blog-header-right" href={{ url_for("blog.all") }}>所有瓜</a>
+        </div>
+    </div>
+</div>
+<!--<div id="particles-js"></div>-->
+{% block content %} {% endblock %}
+<!--<script src="/static/js/particles.js"></script>-->
+<!--<script src="/static/js/app2.js"></script>-->
+</body>
+</html>
