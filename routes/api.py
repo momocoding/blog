@@ -16,6 +16,7 @@ def api_login_required(f):
 
 
 # 添加blog
+@admin_required
 @main.route('/blog/add', methods=['POST'])
 def blog_add():
     u = current_user()
@@ -70,6 +71,7 @@ def load_content():
 
 
 # 删除blog
+@admin_required
 @main.route('/blog/delete/<int:id>')
 def blog_delete(id):
     current = current_user()
