@@ -212,6 +212,7 @@
                     </span>
                 </div>
                 <div class="blog-cell-title">
+                    <a name="{{ b.title }}"></a>
                     <h2 class="gua-hover">{{ b.title }}</h2>
                 </div>
                 <div class="blog-cell-info padding-10 ">
@@ -277,7 +278,7 @@
                 <div class="blog-top">
                     {% for b in tops %}
                     <div class="blog-sub-top left">
-                        <a href="">{{ b.title }}</a>
+                        <a href="#{{ b.title }}">{{ b.title }}</a>
                     </div>
                     {% endfor %}
                 </div>
