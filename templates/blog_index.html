@@ -191,7 +191,11 @@
         max-height: 25px;
         line-height: 1.5em;
     }
-
+    .back-top {
+        position: fixed;
+        bottom: 80px;
+        right: 520px;
+    }
 
 </style>
 {% endblock %}
@@ -283,6 +287,11 @@
                     {% endfor %}
                 </div>
                 {% endif %}
+                <div class="back-top">
+                    <a href="#博客说">
+                        <img src="/static/images/backtop.gif" alt="返回顶部">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
