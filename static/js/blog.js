@@ -161,7 +161,7 @@ $(document).ready(function(){
         var response = function(r){
             if(r.success == 302) {
                 alertify.success(r.message)
-                window.location.href = '/login'
+                window.location.href = '/'
             }else if(r.success == true) {
                 alertify.success(r.message)
                 var comment = r.data
