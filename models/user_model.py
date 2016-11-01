@@ -6,7 +6,7 @@ class User(db.Model, ModelMixin):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     username = db.Column(db.String(30), unique=True)
-    password = db.Column(db.String(60))
+    password = db.Column(db.String(100))
     avatar = db.Column(db.String(50))
     created_time = db.Column(db.String(30), default=0)
     blogs = db.relationship('Blog', backref='user')
