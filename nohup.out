@@ -1,0 +1,1223 @@
+[2016-10-06 23:10:27 +0800] [16778] [INFO] Starting gunicorn 19.6.0
+[2016-10-06 23:10:27 +0800] [16778] [INFO] Listening at: http://0.0.0.0:8000 (16778)
+[2016-10-06 23:10:27 +0800] [16778] [INFO] Using worker: sync
+[2016-10-06 23:10:27 +0800] [16789] [INFO] Booting worker with pid: 16789
+[2016-10-06 23:10:27 +0800] [16789] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.4/dist-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.4/dist-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.4/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.4/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.4/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.4/dist-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/root/blog/gunicorn_run.py", line 1, in <module>
+    import main as blog
+  File "/root/blog/main.py", line 3, in <module>
+    from flask_migrate import Migrate, MigrateCommand
+ImportError: No module named 'flask_migrate'
+[2016-10-06 23:10:27 +0800] [16789] [INFO] Worker exiting (pid: 16789)
+[2016-10-06 23:10:27 +0800] [16778] [INFO] Shutting down: Master
+[2016-10-06 23:10:27 +0800] [16778] [INFO] Reason: Worker failed to boot.
+[2016-10-06 23:14:47 +0800] [16928] [INFO] Starting gunicorn 19.6.0
+[2016-10-06 23:14:47 +0800] [16928] [INFO] Listening at: http://0.0.0.0:8000 (16928)
+[2016-10-06 23:14:47 +0800] [16928] [INFO] Using worker: sync
+[2016-10-06 23:14:47 +0800] [16939] [INFO] Booting worker with pid: 16939
+[2016-10-06 23:39:17 +0800] [16928] [CRITICAL] WORKER TIMEOUT (pid:16939)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-06 23:39:17 +0800] [16939] [INFO] Worker exiting (pid: 16939)
+登录失败
+[2016-10-06 23:39:17 +0800] [17068] [INFO] Booting worker with pid: 17068
+[2016-10-07 03:09:28 +0800] [16928] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-07 03:09:28 +0800] [17068] [INFO] Worker exiting (pid: 17068)
+[2016-10-07 03:09:28 +0800] [16928] [INFO] Shutting down: Master
+[2016-10-07 03:09:58 +0800] [17782] [INFO] Starting gunicorn 19.6.0
+[2016-10-07 03:09:58 +0800] [17782] [INFO] Listening at: http://0.0.0.0:8000 (17782)
+[2016-10-07 03:09:58 +0800] [17782] [INFO] Using worker: sync
+[2016-10-07 03:09:58 +0800] [17793] [INFO] Booting worker with pid: 17793
+[2016-10-07 03:20:58 +0800] [17782] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-07 03:20:58 +0800] [17793] [INFO] Worker exiting (pid: 17793)
+[2016-10-07 03:20:58 +0800] [17782] [INFO] Shutting down: Master
+[2016-10-07 03:21:18 +0800] [18003] [INFO] Starting gunicorn 19.6.0
+[2016-10-07 03:21:18 +0800] [18003] [INFO] Listening at: http://0.0.0.0:8000 (18003)
+[2016-10-07 03:21:18 +0800] [18003] [INFO] Using worker: sync
+[2016-10-07 03:21:18 +0800] [18014] [INFO] Booting worker with pid: 18014
+[2016-10-07 06:16:55 +0800] [18003] [INFO] Handling signal: hup
+[2016-10-07 06:16:55 +0800] [18003] [INFO] Hang up: Master
+[2016-10-07 06:16:55 +0800] [18449] [INFO] Booting worker with pid: 18449
+[2016-10-07 15:57:19 +0800] [18003] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-07 15:57:19 +0800] [18449] [INFO] Worker exiting (pid: 18449)
+[2016-10-07 15:57:20 +0800] [18003] [INFO] Shutting down: Master
+[2016-10-07 15:57:46 +0800] [20605] [INFO] Starting gunicorn 19.6.0
+[2016-10-07 15:57:46 +0800] [20605] [INFO] Listening at: http://0.0.0.0:8000 (20605)
+[2016-10-07 15:57:46 +0800] [20605] [INFO] Using worker: sync
+[2016-10-07 15:57:46 +0800] [20616] [INFO] Booting worker with pid: 20616
+[2016-10-07 18:09:03 +0800] [20948] [INFO] Booting worker with pid: 20948
+[2016-10-07 18:09:03 +0800] [20605] [INFO] Handling signal: hup
+[2016-10-07 18:09:03 +0800] [20605] [INFO] Hang up: Master
+[2016-10-07 18:09:03 +0800] [20949] [INFO] Booting worker with pid: 20949
+[2016-10-07 18:09:04 +0800] [20948] [INFO] Worker exiting (pid: 20948)
+[2016-10-07 23:41:58 +0800] [20605] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-07 23:41:58 +0800] [20949] [INFO] Worker exiting (pid: 20949)
+[2016-10-07 23:41:58 +0800] [20605] [INFO] Shutting down: Master
+[2016-10-07 23:42:05 +0800] [21891] [INFO] Starting gunicorn 19.6.0
+[2016-10-07 23:42:05 +0800] [21891] [INFO] Listening at: http://0.0.0.0:8000 (21891)
+[2016-10-07 23:42:05 +0800] [21891] [INFO] Using worker: sync
+[2016-10-07 23:42:05 +0800] [21902] [INFO] Booting worker with pid: 21902
+[2016-10-07 23:44:11 +0800] [21891] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-07 23:44:11 +0800] [21902] [INFO] Worker exiting (pid: 21902)
+[2016-10-07 23:44:11 +0800] [21891] [INFO] Shutting down: Master
+[2016-10-07 23:44:27 +0800] [21973] [INFO] Starting gunicorn 19.6.0
+[2016-10-07 23:44:27 +0800] [21973] [INFO] Listening at: http://0.0.0.0:8000 (21973)
+[2016-10-07 23:44:27 +0800] [21973] [INFO] Using worker: sync
+[2016-10-07 23:44:27 +0800] [21984] [INFO] Booting worker with pid: 21984
+[2016-10-07 23:58:51 +0800] [22088] [INFO] Starting gunicorn 19.6.0
+[2016-10-07 23:58:51 +0800] [22088] [INFO] Listening at: http://0.0.0.0:80 (22088)
+[2016-10-07 23:58:51 +0800] [22088] [INFO] Using worker: sync
+[2016-10-07 23:58:51 +0800] [22099] [INFO] Booting worker with pid: 22099
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-08 00:14:28 +0800] [21984] [INFO] Worker exiting (pid: 21984)
+[2016-10-08 00:14:28 +0800] [21973] [CRITICAL] WORKER TIMEOUT (pid:21984)
+[2016-10-08 00:14:28 +0800] [21973] [INFO] Handling signal: term
+[2016-10-08 00:14:28 +0800] [21973] [INFO] Shutting down: Master
+[2016-10-08 00:50:05 +0800] [22088] [CRITICAL] WORKER TIMEOUT (pid:22099)
+[2016-10-08 00:50:05 +0800] [22088] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-08 00:50:05 +0800] [22088] [INFO] Shutting down: Master
+[2016-10-08 00:52:46 +0800] [22696] [INFO] Starting gunicorn 19.6.0
+[2016-10-08 00:52:46 +0800] [22696] [INFO] Listening at: http://0.0.0.0:80 (22696)
+[2016-10-08 00:52:46 +0800] [22696] [INFO] Using worker: sync
+[2016-10-08 00:52:46 +0800] [22707] [INFO] Booting worker with pid: 22707
+[2016-10-08 00:54:29 +0800] [22696] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-08 00:54:29 +0800] [22707] [INFO] Worker exiting (pid: 22707)
+[2016-10-08 00:54:29 +0800] [22696] [INFO] Shutting down: Master
+[2016-10-08 00:54:52 +0800] [22784] [INFO] Starting gunicorn 19.6.0
+[2016-10-08 00:54:52 +0800] [22784] [INFO] Listening at: http://0.0.0.0:80 (22784)
+[2016-10-08 00:54:52 +0800] [22784] [INFO] Using worker: sync
+[2016-10-08 00:54:52 +0800] [22795] [INFO] Booting worker with pid: 22795
+[2016-10-08 01:25:54 +0800] [22784] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-08 01:25:54 +0800] [22795] [INFO] Worker exiting (pid: 22795)
+[2016-10-08 01:25:54 +0800] [22784] [INFO] Shutting down: Master
+[2016-10-08 01:25:59 +0800] [22950] [INFO] Starting gunicorn 19.6.0
+[2016-10-08 01:25:59 +0800] [22950] [INFO] Listening at: http://0.0.0.0:80 (22950)
+[2016-10-08 01:25:59 +0800] [22950] [INFO] Using worker: sync
+[2016-10-08 01:25:59 +0800] [22961] [INFO] Booting worker with pid: 22961
+[2016-10-08 01:35:16 +0800] [22950] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-08 01:35:16 +0800] [22961] [INFO] Worker exiting (pid: 22961)
+[2016-10-08 01:35:16 +0800] [22950] [INFO] Shutting down: Master
+[2016-10-08 01:35:27 +0800] [23047] [INFO] Starting gunicorn 19.6.0
+[2016-10-08 01:35:27 +0800] [23047] [INFO] Listening at: http://0.0.0.0:80 (23047)
+[2016-10-08 01:35:27 +0800] [23047] [INFO] Using worker: sync
+[2016-10-08 01:35:27 +0800] [23058] [INFO] Booting worker with pid: 23058
+[2016-10-08 01:36:16 +0800] [23047] [CRITICAL] WORKER TIMEOUT (pid:23058)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-08 01:36:16 +0800] [23058] [INFO] Worker exiting (pid: 23058)
+[2016-10-08 01:36:16 +0800] [23062] [INFO] Booting worker with pid: 23062
+[2016-10-08 01:44:42 +0800] [23047] [CRITICAL] WORKER TIMEOUT (pid:23062)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-08 01:44:42 +0800] [23062] [INFO] Worker exiting (pid: 23062)
+[2016-10-08 01:44:42 +0800] [23084] [INFO] Booting worker with pid: 23084
+[2016-10-08 01:45:14 +0800] [23047] [CRITICAL] WORKER TIMEOUT (pid:23084)
+[2016-10-08 01:45:14 +0800] [23084] [INFO] Worker exiting (pid: 23084)
+[2016-10-08 01:45:14 +0800] [23088] [INFO] Booting worker with pid: 23088
+[2016-10-08 01:45:45 +0800] [23047] [CRITICAL] WORKER TIMEOUT (pid:23088)
+[2016-10-08 01:45:45 +0800] [23088] [INFO] Worker exiting (pid: 23088)
+[2016-10-08 01:45:45 +0800] [23090] [INFO] Booting worker with pid: 23090
+[2016-10-08 01:46:16 +0800] [23047] [CRITICAL] WORKER TIMEOUT (pid:23090)
+[2016-10-08 01:46:16 +0800] [23090] [INFO] Worker exiting (pid: 23090)
+[2016-10-08 01:46:16 +0800] [23094] [INFO] Booting worker with pid: 23094
+[2016-10-08 01:46:47 +0800] [23047] [CRITICAL] WORKER TIMEOUT (pid:23094)
+[2016-10-08 01:46:47 +0800] [23094] [INFO] Worker exiting (pid: 23094)
+[2016-10-08 01:46:48 +0800] [23096] [INFO] Booting worker with pid: 23096
+[2016-10-08 01:58:22 +0800] [23047] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-08 01:58:22 +0800] [23096] [INFO] Worker exiting (pid: 23096)
+[2016-10-08 01:58:22 +0800] [23047] [INFO] Shutting down: Master
+[2016-10-08 01:58:41 +0800] [23305] [INFO] Starting gunicorn 19.6.0
+[2016-10-08 01:58:41 +0800] [23305] [INFO] Listening at: http://0.0.0.0:80 (23305)
+[2016-10-08 01:58:41 +0800] [23305] [INFO] Using worker: sync
+[2016-10-08 01:58:41 +0800] [23316] [INFO] Booting worker with pid: 23316
+[2016-10-08 02:00:40 +0800] [23305] [CRITICAL] WORKER TIMEOUT (pid:23316)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-08 02:00:40 +0800] [23316] [INFO] Worker exiting (pid: 23316)
+[2016-10-08 02:00:40 +0800] [23324] [INFO] Booting worker with pid: 23324
+[2016-10-08 04:01:24 +0800] [23305] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-08 04:01:24 +0800] [23324] [INFO] Worker exiting (pid: 23324)
+[2016-10-08 04:01:24 +0800] [23305] [INFO] Shutting down: Master
+[2016-10-08 04:01:28 +0800] [23964] [INFO] Starting gunicorn 19.6.0
+[2016-10-08 04:01:28 +0800] [23964] [INFO] Listening at: http://0.0.0.0:80 (23964)
+[2016-10-08 04:01:28 +0800] [23964] [INFO] Using worker: sync
+[2016-10-08 04:01:28 +0800] [23975] [INFO] Booting worker with pid: 23975
+[2016-10-08 07:06:46 +0800] [23964] [INFO] Handling signal: hup
+[2016-10-08 07:06:46 +0800] [23964] [INFO] Hang up: Master
+[2016-10-08 07:06:46 +0800] [24495] [INFO] Booting worker with pid: 24495
+[2016-10-08 12:40:58 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:24495)
+[2016-10-08 12:40:58 +0800] [24495] [INFO] Worker exiting (pid: 24495)
+[2016-10-08 12:40:58 +0800] [25258] [INFO] Booting worker with pid: 25258
+[2016-10-09 11:47:24 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:25258)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-09 11:47:24 +0800] [25258] [INFO] Worker exiting (pid: 25258)
+[2016-10-09 11:47:24 +0800] [29413] [INFO] Booting worker with pid: 29413
+[2016-10-09 12:00:13 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:29413)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-09 12:00:13 +0800] [29413] [INFO] Worker exiting (pid: 29413)
+[2016-10-09 12:00:14 +0800] [29443] [INFO] Booting worker with pid: 29443
+[2016-10-10 07:29:05 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:29443)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-10 07:29:05 +0800] [29443] [INFO] Worker exiting (pid: 29443)
+登录失败
+[2016-10-10 07:29:05 +0800] [32135] [INFO] Booting worker with pid: 32135
+[2016-10-10 10:32:02 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:32135)
+[2016-10-10 10:32:02 +0800] [32135] [INFO] Worker exiting (pid: 32135)
+[2016-10-10 10:32:03 +0800] [32585] [INFO] Booting worker with pid: 32585
+[2016-10-10 14:37:19 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:32585)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-10 14:37:19 +0800] [32585] [INFO] Worker exiting (pid: 32585)
+[2016-10-10 14:37:19 +0800] [921] [INFO] Booting worker with pid: 921
+[2016-10-10 14:37:50 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:921)
+[2016-10-10 14:37:50 +0800] [921] [INFO] Worker exiting (pid: 921)
+[2016-10-10 14:37:50 +0800] [925] [INFO] Booting worker with pid: 925
+[2016-10-11 06:16:29 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:925)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-11 06:16:29 +0800] [925] [INFO] Worker exiting (pid: 925)
+[2016-10-11 06:16:29 +0800] [3285] [INFO] Booting worker with pid: 3285
+[2016-10-11 14:26:15 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:3285)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-11 14:26:15 +0800] [3285] [INFO] Worker exiting (pid: 3285)
+[2016-10-11 14:26:15 +0800] [4701] [INFO] Booting worker with pid: 4701
+[2016-10-11 14:26:49 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:4701)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-11 14:26:49 +0800] [4701] [INFO] Worker exiting (pid: 4701)
+[2016-10-11 14:26:49 +0800] [4715] [INFO] Booting worker with pid: 4715
+[2016-10-11 14:27:20 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:4715)
+[2016-10-11 14:27:20 +0800] [4715] [INFO] Worker exiting (pid: 4715)
+[2016-10-11 14:27:20 +0800] [4717] [INFO] Booting worker with pid: 4717
+[2016-10-13 10:28:38 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:4717)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-13 10:28:38 +0800] [4717] [INFO] Worker exiting (pid: 4717)
+[2016-10-13 10:28:38 +0800] [20488] [INFO] Booting worker with pid: 20488
+[2016-10-13 10:29:10 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:20488)
+[2016-10-13 10:29:10 +0800] [20488] [INFO] Worker exiting (pid: 20488)
+[2016-10-13 10:29:10 +0800] [20492] [INFO] Booting worker with pid: 20492
+[2016-10-13 10:29:41 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:20492)
+[2016-10-13 10:29:41 +0800] [20492] [INFO] Worker exiting (pid: 20492)
+[2016-10-13 10:29:41 +0800] [20494] [INFO] Booting worker with pid: 20494
+[2016-10-13 10:30:12 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:20494)
+[2016-10-13 10:30:12 +0800] [20494] [INFO] Worker exiting (pid: 20494)
+[2016-10-13 10:30:12 +0800] [20498] [INFO] Booting worker with pid: 20498
+[2016-10-13 10:30:49 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:20498)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-13 10:30:49 +0800] [20498] [INFO] Worker exiting (pid: 20498)
+[2016-10-13 10:30:49 +0800] [20503] [INFO] Booting worker with pid: 20503
+[2016-10-13 10:31:59 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:20503)
+[2016-10-13 10:31:59 +0800] [20503] [INFO] Worker exiting (pid: 20503)
+[2016-10-13 10:31:59 +0800] [20507] [INFO] Booting worker with pid: 20507
+[2016-10-13 14:37:43 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:20507)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-13 14:37:43 +0800] [20507] [INFO] Worker exiting (pid: 20507)
+[2016-10-13 14:37:44 +0800] [21542] [INFO] Booting worker with pid: 21542
+[2016-10-15 19:52:10 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:21542)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-15 19:52:10 +0800] [21542] [INFO] Worker exiting (pid: 21542)
+[2016-10-15 19:52:10 +0800] [31375] [INFO] Booting worker with pid: 31375
+[2016-10-15 19:52:57 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:31375)
+[2016-10-15 19:52:57 +0800] [31375] [INFO] Worker exiting (pid: 31375)
+[2016-10-15 19:52:57 +0800] [31380] [INFO] Booting worker with pid: 31380
+[2016-10-18 20:34:14 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:31380)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-18 20:34:14 +0800] [31380] [INFO] Worker exiting (pid: 31380)
+[2016-10-18 20:34:14 +0800] [11089] [INFO] Booting worker with pid: 11089
+[2016-10-19 19:51:48 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:11089)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-19 19:51:48 +0800] [11089] [INFO] Worker exiting (pid: 11089)
+[2016-10-19 19:51:49 +0800] [14686] [INFO] Booting worker with pid: 14686
+[2016-10-19 19:52:40 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:14686)
+[2016-10-19 19:52:40 +0800] [14686] [INFO] Worker exiting (pid: 14686)
+[2016-10-19 19:52:40 +0800] [14692] [INFO] Booting worker with pid: 14692
+[2016-10-19 19:54:29 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:14692)
+[2016-10-19 19:54:29 +0800] [14692] [INFO] Worker exiting (pid: 14692)
+[2016-10-19 19:54:29 +0800] [14699] [INFO] Booting worker with pid: 14699
+[2016-10-19 19:56:55 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:14699)
+[2016-10-19 19:56:55 +0800] [14699] [INFO] Worker exiting (pid: 14699)
+[2016-10-19 19:56:55 +0800] [14705] [INFO] Booting worker with pid: 14705
+[2016-10-22 03:17:13 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:14705)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-22 03:17:13 +0800] [14705] [INFO] Worker exiting (pid: 14705)
+[2016-10-22 03:17:13 +0800] [22844] [INFO] Booting worker with pid: 22844
+[2016-10-22 03:21:08 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:22844)
+[2016-10-22 03:21:08 +0800] [22844] [INFO] Worker exiting (pid: 22844)
+[2016-10-22 03:21:09 +0800] [22866] [INFO] Booting worker with pid: 22866
+[2016-10-23 09:41:54 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:22866)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-23 09:41:54 +0800] [22866] [INFO] Worker exiting (pid: 22866)
+[2016-10-23 09:41:54 +0800] [27637] [INFO] Booting worker with pid: 27637
+[2016-10-23 19:38:39 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:27637)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-23 19:38:39 +0800] [27637] [INFO] Worker exiting (pid: 27637)
+[2016-10-23 19:38:39 +0800] [29471] [INFO] Booting worker with pid: 29471
+[2016-10-23 20:17:54 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:29471)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-23 20:17:54 +0800] [29471] [INFO] Worker exiting (pid: 29471)
+[2016-10-23 20:17:54 +0800] [29527] [INFO] Booting worker with pid: 29527
+[2016-10-23 22:23:01 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:29527)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-23 22:23:01 +0800] [29527] [INFO] Worker exiting (pid: 29527)
+[2016-10-23 22:23:01 +0800] [29787] [INFO] Booting worker with pid: 29787
+[2016-10-23 22:45:25 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:29787)
+[2016-10-23 22:45:25 +0800] [29787] [INFO] Worker exiting (pid: 29787)
+[2016-10-23 22:45:25 +0800] [29836] [INFO] Booting worker with pid: 29836
+[2016-10-23 23:49:23 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:29836)
+[2016-10-23 23:49:23 +0800] [29836] [INFO] Worker exiting (pid: 29836)
+[2016-10-23 23:49:23 +0800] [30013] [INFO] Booting worker with pid: 30013
+[2016-10-24 20:45:42 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:30013)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-24 20:45:42 +0800] [30013] [INFO] Worker exiting (pid: 30013)
+[2016-10-24 20:45:42 +0800] [724] [INFO] Booting worker with pid: 724
+[2016-10-25 15:23:24 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:724)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-25 15:23:24 +0800] [724] [INFO] Worker exiting (pid: 724)
+[2016-10-25 15:23:24 +0800] [3576] [INFO] Booting worker with pid: 3576
+[2016-10-25 15:23:55 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:3576)
+[2016-10-25 15:23:55 +0800] [3576] [INFO] Worker exiting (pid: 3576)
+[2016-10-25 15:23:56 +0800] [3580] [INFO] Booting worker with pid: 3580
+[2016-10-25 15:24:27 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:3580)
+[2016-10-25 15:24:27 +0800] [3580] [INFO] Worker exiting (pid: 3580)
+[2016-10-25 15:24:27 +0800] [3584] [INFO] Booting worker with pid: 3584
+[2016-10-25 15:24:58 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:3584)
+[2016-10-25 15:24:58 +0800] [3584] [INFO] Worker exiting (pid: 3584)
+[2016-10-25 15:24:58 +0800] [3590] [INFO] Booting worker with pid: 3590
+[2016-10-25 15:52:37 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:3590)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-25 15:52:37 +0800] [3590] [INFO] Worker exiting (pid: 3590)
+[2016-10-25 15:52:37 +0800] [3734] [INFO] Booting worker with pid: 3734
+[2016-10-25 15:53:08 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:3734)
+[2016-10-25 15:53:08 +0800] [3734] [INFO] Worker exiting (pid: 3734)
+[2016-10-25 15:53:08 +0800] [3740] [INFO] Booting worker with pid: 3740
+[2016-10-25 15:54:00 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:3740)
+[2016-10-25 15:54:00 +0800] [3740] [INFO] Worker exiting (pid: 3740)
+[2016-10-25 15:54:01 +0800] [3746] [INFO] Booting worker with pid: 3746
+[2016-10-25 15:54:32 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:3746)
+[2016-10-25 15:54:32 +0800] [3746] [INFO] Worker exiting (pid: 3746)
+[2016-10-25 15:54:32 +0800] [3748] [INFO] Booting worker with pid: 3748
+[2016-10-25 15:55:03 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:3748)
+[2016-10-25 15:55:03 +0800] [3748] [INFO] Worker exiting (pid: 3748)
+[2016-10-25 15:55:03 +0800] [3754] [INFO] Booting worker with pid: 3754
+[2016-10-26 19:12:45 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:3754)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-26 19:12:45 +0800] [3754] [INFO] Worker exiting (pid: 3754)
+[2016-10-26 19:12:46 +0800] [9069] [INFO] Booting worker with pid: 9069
+[2016-10-26 22:25:09 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:9069)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-26 22:25:09 +0800] [9069] [INFO] Worker exiting (pid: 9069)
+[2016-10-26 22:25:09 +0800] [9542] [INFO] Booting worker with pid: 9542
+[2016-10-26 23:29:19 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:9542)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-26 23:29:19 +0800] [9542] [INFO] Worker exiting (pid: 9542)
+[2016-10-26 23:29:19 +0800] [9680] [INFO] Booting worker with pid: 9680
+[2016-10-27 10:23:15 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:9680)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-27 10:23:15 +0800] [9680] [INFO] Worker exiting (pid: 9680)
+[2016-10-27 10:23:15 +0800] [11582] [INFO] Booting worker with pid: 11582
+[2016-10-27 16:01:18 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:11582)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-27 16:01:18 +0800] [11582] [INFO] Worker exiting (pid: 11582)
+[2016-10-27 16:01:18 +0800] [12324] [INFO] Booting worker with pid: 12324
+[2016-10-27 16:01:50 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:12324)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-27 16:01:50 +0800] [12324] [INFO] Worker exiting (pid: 12324)
+[2016-10-27 16:01:50 +0800] [12328] [INFO] Booting worker with pid: 12328
+[2016-10-27 16:02:21 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:12328)
+[2016-10-27 16:02:21 +0800] [12328] [INFO] Worker exiting (pid: 12328)
+[2016-10-27 16:02:21 +0800] [12330] [INFO] Booting worker with pid: 12330
+[2016-10-27 16:03:10 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:12330)
+[2016-10-27 16:03:10 +0800] [12330] [INFO] Worker exiting (pid: 12330)
+[2016-10-27 16:03:10 +0800] [12335] [INFO] Booting worker with pid: 12335
+[2016-10-28 10:25:44 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:12335)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-28 10:25:44 +0800] [12335] [INFO] Worker exiting (pid: 12335)
+[2016-10-28 10:25:44 +0800] [15735] [INFO] Booting worker with pid: 15735
+[2016-10-29 05:07:08 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:15735)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-29 05:07:08 +0800] [15735] [INFO] Worker exiting (pid: 15735)
+[2016-10-29 05:07:08 +0800] [19789] [INFO] Booting worker with pid: 19789
+[2016-10-29 09:22:53 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:19789)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-29 09:22:53 +0800] [19789] [INFO] Worker exiting (pid: 19789)
+[2016-10-29 09:22:53 +0800] [20348] [INFO] Booting worker with pid: 20348
+[2016-10-29 09:26:21 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:20348)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-29 09:26:21 +0800] [20348] [INFO] Worker exiting (pid: 20348)
+[2016-10-29 09:26:22 +0800] [20359] [INFO] Booting worker with pid: 20359
+[2016-10-29 10:13:54 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:20359)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-29 10:13:54 +0800] [20359] [INFO] Worker exiting (pid: 20359)
+[2016-10-29 10:13:54 +0800] [20593] [INFO] Booting worker with pid: 20593
+[2016-10-29 11:21:40 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:20593)
+[2016-10-29 11:21:40 +0800] [20593] [INFO] Worker exiting (pid: 20593)
+[2016-10-29 11:21:40 +0800] [20733] [INFO] Booting worker with pid: 20733
+[2016-10-29 16:13:59 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:20733)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-29 16:13:59 +0800] [20733] [INFO] Worker exiting (pid: 20733)
+[2016-10-29 16:14:00 +0800] [21542] [INFO] Booting worker with pid: 21542
+[2016-10-29 16:15:04 +0800] [23964] [CRITICAL] WORKER TIMEOUT (pid:21542)
+[2016-10-29 16:15:04 +0800] [21542] [INFO] Worker exiting (pid: 21542)
+[2016-10-29 16:15:04 +0800] [21546] [INFO] Booting worker with pid: 21546
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-30 16:53:10 +0800] [21546] [INFO] Worker exiting (pid: 21546)
+[2016-10-30 16:53:10 +0800] [23964] [INFO] Handling signal: term
+[2016-10-30 16:53:10 +0800] [23964] [INFO] Shutting down: Master
+[2016-10-31 15:37:31 +0800] [2494] [INFO] Starting gunicorn 19.6.0
+[2016-10-31 15:37:31 +0800] [2494] [INFO] Listening at: http://0.0.0.0:80 (2494)
+[2016-10-31 15:37:31 +0800] [2494] [INFO] Using worker: sync
+[2016-10-31 15:37:31 +0800] [2505] [INFO] Booting worker with pid: 2505
+[2016-10-31 15:39:13 +0800] [2494] [CRITICAL] WORKER TIMEOUT (pid:2505)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1265, "Data truncated for column 'password' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1265, "Data truncated for column 'created_time' at row 1")
+  result = self._query(query)
+[2016-10-31 15:39:13 +0800] [2505] [INFO] Worker exiting (pid: 2505)
+登录失败
+登录失败
+[2016-10-31 15:39:13 +0800] [2510] [INFO] Booting worker with pid: 2510
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-31 15:40:03,895] ERROR in app: Exception on /user/register [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'xin' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/user.py", line 18, in register
+    u.save()
+  File "/root/blog/models/__init__.py", line 30, in save
+    db.session.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 801, in commit
+    self.transaction.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 392, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 372, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2019, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2137, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2101, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 373, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 532, in execute
+    uow
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 174, in save_obj
+    mapper, table, insert)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 800, in _emit_insert_statements
+    execute(statement, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'xin' for key 'username'") [SQL: 'INSERT INTO users (username, password, avatar, created_time) VALUES (%(username)s, %(password)s, %(avatar)s, %(created_time)s)'] [parameters: {'username': 'xin', 'password': 'pbkdf2:sha1:1000$GjqLlWKP$0476e5d767501ce53e853137837cecf8c6d06e45', 'avatar': '/static/images/avatar.jpg', 'created_time': '2016/10/31 15:40:03'}]
+[2016-10-31 15:40:12,168] ERROR in app: Exception on /user/register [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'xin' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/user.py", line 18, in register
+    u.save()
+  File "/root/blog/models/__init__.py", line 30, in save
+    db.session.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 801, in commit
+    self.transaction.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 392, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 372, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2019, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2137, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2101, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 373, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 532, in execute
+    uow
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 174, in save_obj
+    mapper, table, insert)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 800, in _emit_insert_statements
+    execute(statement, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'xin' for key 'username'") [SQL: 'INSERT INTO users (username, password, avatar, created_time) VALUES (%(username)s, %(password)s, %(avatar)s, %(created_time)s)'] [parameters: {'username': 'xin', 'password': 'pbkdf2:sha1:1000$lwCIYVjV$0c14b95f622d922bc5c2725672c950eb204ce1b3', 'avatar': '/static/images/avatar.jpg', 'created_time': '2016/10/31 15:40:12'}]
+[2016-10-31 15:40:19,864] ERROR in app: Exception on /user/register [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'xin' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/user.py", line 18, in register
+    u.save()
+  File "/root/blog/models/__init__.py", line 30, in save
+    db.session.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 801, in commit
+    self.transaction.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 392, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 372, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2019, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2137, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2101, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 373, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 532, in execute
+    uow
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 174, in save_obj
+    mapper, table, insert)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 800, in _emit_insert_statements
+    execute(statement, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'xin' for key 'username'") [SQL: 'INSERT INTO users (username, password, avatar, created_time) VALUES (%(username)s, %(password)s, %(avatar)s, %(created_time)s)'] [parameters: {'username': 'xin', 'password': 'pbkdf2:sha1:1000$BVUOTQI0$7a5a8dacd598a2e420ab273f9b8450a56ed09c52', 'avatar': '/static/images/avatar.jpg', 'created_time': '2016/10/31 15:40:19'}]
+[2016-10-31 18:28:37 +0800] [2494] [INFO] Handling signal: hup
+[2016-10-31 18:28:37 +0800] [2494] [INFO] Hang up: Master
+[2016-10-31 18:28:37 +0800] [2874] [INFO] Booting worker with pid: 2874
+[2016-10-31 22:27:45 +0800] [2494] [CRITICAL] WORKER TIMEOUT (pid:2874)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-10-31 22:27:45 +0800] [2874] [INFO] Worker exiting (pid: 2874)
+[2016-10-31 22:27:45 +0800] [3390] [INFO] Booting worker with pid: 3390
+[2016-10-31 22:29:22 +0800] [2494] [CRITICAL] WORKER TIMEOUT (pid:3390)
+[2016-10-31 22:29:22 +0800] [3390] [INFO] Worker exiting (pid: 3390)
+登录失败
+[2016-10-31 22:29:22 +0800] [3418] [INFO] Booting worker with pid: 3418
+[2016-10-31 22:48:55 +0800] [2494] [CRITICAL] WORKER TIMEOUT (pid:3418)
+[2016-10-31 22:48:55 +0800] [3418] [INFO] Worker exiting (pid: 3418)
+[2016-10-31 22:48:55 +0800] [3566] [INFO] Booting worker with pid: 3566
+[2016-10-31 23:10:06 +0800] [2494] [INFO] Handling signal: term
+[2016-10-31 23:10:36 +0800] [2494] [INFO] Shutting down: Master
+[2016-10-31 23:11:25 +0800] [3705] [INFO] Starting gunicorn 19.6.0
+[2016-10-31 23:11:25 +0800] [3705] [INFO] Listening at: http://0.0.0.0:80 (3705)
+[2016-10-31 23:11:25 +0800] [3705] [INFO] Using worker: sync
+[2016-10-31 23:11:25 +0800] [3716] [INFO] Booting worker with pid: 3716
+[2016-10-31 23:12:52 +0800] [3705] [CRITICAL] WORKER TIMEOUT (pid:3716)
+[2016-10-31 23:12:52 +0800] [3716] [INFO] Worker exiting (pid: 3716)
+[2016-10-31 23:12:52 +0800] [3720] [INFO] Booting worker with pid: 3720
+[2016-10-31 23:12:53,342] ERROR in app: Exception on /user/register [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'xin' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/user.py", line 18, in register
+    u.save()
+  File "/root/blog/models/__init__.py", line 30, in save
+    db.session.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 801, in commit
+    self.transaction.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 392, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 372, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2019, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2137, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2101, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 373, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 532, in execute
+    uow
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 174, in save_obj
+    mapper, table, insert)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 800, in _emit_insert_statements
+    execute(statement, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'xin' for key 'username'") [SQL: 'INSERT INTO users (username, password, avatar, created_time) VALUES (%(username)s, %(password)s, %(avatar)s, %(created_time)s)'] [parameters: {'avatar': '/static/images/avatar.jpg', 'password': 'pbkdf2:sha1:1000$HpO7WLvE$2d4c6245d95c2af71bfcb48a551ff37c92ed0ce4', 'created_time': '2016/10/31 23:12:53', 'username': 'xin'}]
+[2016-10-31 23:13:27 +0800] [3705] [CRITICAL] WORKER TIMEOUT (pid:3720)
+[2016-10-31 23:13:27 +0800] [3720] [INFO] Worker exiting (pid: 3720)
+[2016-10-31 23:13:27 +0800] [3724] [INFO] Booting worker with pid: 3724
+[2016-10-31 23:13:27,577] ERROR in app: Exception on /user/register [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'xin' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/user.py", line 18, in register
+    u.save()
+  File "/root/blog/models/__init__.py", line 30, in save
+    db.session.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 801, in commit
+    self.transaction.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 392, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 372, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2019, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2137, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2101, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 373, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 532, in execute
+    uow
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 174, in save_obj
+    mapper, table, insert)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 800, in _emit_insert_statements
+    execute(statement, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'xin' for key 'username'") [SQL: 'INSERT INTO users (username, password, avatar, created_time) VALUES (%(username)s, %(password)s, %(avatar)s, %(created_time)s)'] [parameters: {'avatar': '/static/images/avatar.jpg', 'password': 'pbkdf2:sha1:1000$QaHUtpsd$c84b90c10d3888c033edf41c38688bf2af807ebd', 'created_time': '2016/10/31 23:13:27', 'username': 'xin'}]
+[2016-10-31 23:13:58 +0800] [3705] [CRITICAL] WORKER TIMEOUT (pid:3724)
+[2016-10-31 23:13:58 +0800] [3724] [INFO] Worker exiting (pid: 3724)
+[2016-10-31 23:13:58 +0800] [3728] [INFO] Booting worker with pid: 3728
+[2016-10-31 23:14:13,150] ERROR in app: Exception on /user/register [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'xin' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/user.py", line 18, in register
+    u.save()
+  File "/root/blog/models/__init__.py", line 30, in save
+    db.session.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 801, in commit
+    self.transaction.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 392, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 372, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2019, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2137, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2101, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 373, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 532, in execute
+    uow
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 174, in save_obj
+    mapper, table, insert)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 800, in _emit_insert_statements
+    execute(statement, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'xin' for key 'username'") [SQL: 'INSERT INTO users (username, password, avatar, created_time) VALUES (%(username)s, %(password)s, %(avatar)s, %(created_time)s)'] [parameters: {'avatar': '/static/images/avatar.jpg', 'password': 'pbkdf2:sha1:1000$XlQBqiMr$1b7f9786697ed3e9439aea7caf1b7c502ea9fce4', 'created_time': '2016/10/31 23:14:13', 'username': 'xin'}]
+[2016-10-31 23:26:23 +0800] [3705] [INFO] Handling signal: hup
+[2016-10-31 23:26:23 +0800] [3705] [INFO] Hang up: Master
+[2016-10-31 23:26:23 +0800] [3775] [INFO] Booting worker with pid: 3775
+[2016-11-01 12:17:19 +0800] [3705] [CRITICAL] WORKER TIMEOUT (pid:3775)
+[2016-11-01 12:17:19 +0800] [3775] [INFO] Worker exiting (pid: 3775)
+[2016-11-01 12:17:19 +0800] [5618] [INFO] Booting worker with pid: 5618
+[2016-11-01 20:56:47 +0800] [3705] [CRITICAL] WORKER TIMEOUT (pid:5618)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-01 20:56:47 +0800] [5618] [INFO] Worker exiting (pid: 5618)
+[2016-11-01 20:56:47 +0800] [6884] [INFO] Booting worker with pid: 6884
+[2016-11-01 20:59:03 +0800] [3705] [CRITICAL] WORKER TIMEOUT (pid:6884)
+[2016-11-01 20:59:03 +0800] [6884] [INFO] Worker exiting (pid: 6884)
+[2016-11-01 20:59:03 +0800] [6893] [INFO] Booting worker with pid: 6893
+[2016-11-01 20:59:42,384] ERROR in app: Exception on /user/register [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'xin' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/user.py", line 18, in register
+    u.save()
+  File "/root/blog/models/__init__.py", line 30, in save
+    db.session.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 801, in commit
+    self.transaction.commit()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 392, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 372, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2019, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2137, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 186, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/session.py", line 2101, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 373, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/unitofwork.py", line 532, in execute
+    uow
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 174, in save_obj
+    mapper, table, insert)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/persistence.py", line 800, in _emit_insert_statements
+    execute(statement, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'xin' for key 'username'") [SQL: 'INSERT INTO users (username, password, avatar, created_time) VALUES (%(username)s, %(password)s, %(avatar)s, %(created_time)s)'] [parameters: {'avatar': '/static/images/avatar.jpg', 'password': 'pbkdf2:sha1:1000$orhvuFlN$8245e848c76ff4c56d696175c0899ef0ace1b0b2', 'created_time': '2016/11/01 20:59:42', 'username': 'xin'}]

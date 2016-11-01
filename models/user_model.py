@@ -5,10 +5,10 @@ from werkzeug.security import generate_password_hash, check_password_hash
 class User(db.Model, ModelMixin):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    username = db.Column(db.String())
-    password = db.Column(db.String())
-    avatar = db.Column(db.String())
-    created_time = db.Column(db.Integer, default=0)
+    username = db.Column(db.String(30), unique=True)
+    password = db.Column(db.String(60))
+    avatar = db.Column(db.String(50))
+    created_time = db.Column(db.String(30), default=0)
     blogs = db.relationship('Blog', backref='user')
     comments = db.relationship('Comment', backref='user')
 

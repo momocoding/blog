@@ -9,14 +9,14 @@ class Blog(db.Model, ModelMixin):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     read_count = db.Column(db.Integer)
     comment_count = db.Column(db.Integer)
-    title = db.Column(db.String())
-    sort = db.Column(db.String())
-    summary = db.Column(db.String())
-    content = db.Column(db.String())
-    created_time = db.Column(db.String())
+    title = db.Column(db.String(50))
+    sort = db.Column(db.String(20))
+    summary = db.Column(db.String(150))
+    content = db.Column(db.String(1000))
+    created_time = db.Column(db.String(30))
 
     # 定义外键关系
-    user_id = db.Column(db.String(), db.ForeignKey('users.username'))
+    user_id = db.Column(db.String(30), db.ForeignKey('users.username'))
     comments = db.relationship('Comment', backref='blog')
 
     def __init__(self, form):

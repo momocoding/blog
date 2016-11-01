@@ -31,8 +31,9 @@ def register_routes():
 
 def configure_app():
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-    app.secret_key = '******'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///{}'.format(db_path)
+    app.secret_key = 'secret key'
+    # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///{}'.format(db_path)
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:123456@localhost/blog?charset=utf8'
     db.init_app(app)
     register_routes()
 
