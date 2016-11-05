@@ -2,8 +2,8 @@ from flask import Flask
 from flask import render_template
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
-
 from models import db
+
 
 # 这里 import 具体的 Model 类是为了给 migrate 用
 # 如果不 import 那么无法迁移
