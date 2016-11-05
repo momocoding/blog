@@ -11,8 +11,8 @@ class Blog(db.Model, ModelMixin):
     comment_count = db.Column(db.Integer)
     title = db.Column(db.String(50))
     sort = db.Column(db.String(20))
-    summary = db.Column(db.String(150))
-    content = db.Column(db.String(1000))
+    summary = db.Column(db.String(1500))
+    content = db.Column(db.String(20000))
     created_time = db.Column(db.String(30))
 
     # 定义外键关系

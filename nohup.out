@@ -1221,3 +1221,508 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
     raise errorclass(errno, errval)
 sqlalchemy.exc.IntegrityError: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'xin' for key 'username'") [SQL: 'INSERT INTO users (username, password, avatar, created_time) VALUES (%(username)s, %(password)s, %(avatar)s, %(created_time)s)'] [parameters: {'avatar': '/static/images/avatar.jpg', 'password': 'pbkdf2:sha1:1000$orhvuFlN$8245e848c76ff4c56d696175c0899ef0ace1b0b2', 'created_time': '2016/11/01 20:59:42', 'username': 'xin'}]
+[2016-11-01 22:50:20 +0800] [3705] [CRITICAL] WORKER TIMEOUT (pid:6893)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-01 22:50:20 +0800] [6893] [INFO] Worker exiting (pid: 6893)
+登录失败
+[2016-11-01 22:50:20 +0800] [7862] [INFO] Booting worker with pid: 7862
+[2016-11-02 00:57:59 +0800] [3705] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE6\\x89\\xA9\\xE5\\xB1\\x95...' for column 'title' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE7\\x86\\x9F\\xE6\\x82\\x89...' for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE5\\xAE\\x89\\xE8\\xA3\\x85...' for column 'content' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1265, "Data truncated for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE7\\x9C\\x8B\\xE6\\x89\\xA5' for column 'title' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE9\\xA3\\x8E\\xE9\\xAA\\x9A...' for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE9\\x98\\xBF\\xE4\\xB8\\x89...' for column 'content' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE6\\x8E\\x8F\\xE7\\xB2\\xAA...' for column 'title' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xB9\\xB1\\xE7\\xA0\\x81...' for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xB9\\xB1\\xE7\\xA0\\x81...' for column 'content' at row 1")
+  result = self._query(query)
+[2016-11-02 00:57:59 +0800] [7862] [INFO] Worker exiting (pid: 7862)
+[2016-11-02 00:58:00 +0800] [3705] [INFO] Shutting down: Master
+[2016-11-02 00:58:55 +0800] [8408] [INFO] Starting gunicorn 19.6.0
+[2016-11-02 00:58:55 +0800] [8408] [INFO] Listening at: http://0.0.0.0:80 (8408)
+[2016-11-02 00:58:55 +0800] [8408] [INFO] Using worker: sync
+[2016-11-02 00:58:55 +0800] [8419] [INFO] Booting worker with pid: 8419
+[2016-11-02 01:00:08 +0800] [8408] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1265, "Data truncated for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE6\\x9B\\xB4\\xE6\\x96\\xB0' for column 'title' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE9\\xA3\\x8E\\xE9\\xAA\\x9A...' for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE9\\xA3\\x8E\\xE9\\xAA\\x9A...' for column 'content' at row 1")
+  result = self._query(query)
+[2016-11-02 01:00:08 +0800] [8419] [INFO] Worker exiting (pid: 8419)
+[2016-11-02 01:00:08 +0800] [8408] [INFO] Shutting down: Master
+[2016-11-02 01:06:58 +0800] [8566] [INFO] Starting gunicorn 19.6.0
+[2016-11-02 01:06:58 +0800] [8566] [INFO] Listening at: http://0.0.0.0:80 (8566)
+[2016-11-02 01:06:58 +0800] [8566] [INFO] Using worker: sync
+[2016-11-02 01:06:58 +0800] [8577] [INFO] Booting worker with pid: 8577
+[2016-11-02 01:07:12,828] ERROR in app: Exception on /blog/edit/3 [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/__init__.py", line 51, in function
+    if current_user().id != 1:
+AttributeError: 'NoneType' object has no attribute 'id'
+[2016-11-02 01:07:18,342] ERROR in app: Exception on /blog/add [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/__init__.py", line 51, in function
+    if current_user().id != 1:
+AttributeError: 'NoneType' object has no attribute 'id'
+[2016-11-02 03:37:20 +0800] [8566] [INFO] Handling signal: hup
+[2016-11-02 03:37:20 +0800] [8566] [INFO] Hang up: Master
+[2016-11-02 03:37:20 +0800] [8924] [INFO] Booting worker with pid: 8924
+[2016-11-02 19:55:23 +0800] [8566] [CRITICAL] WORKER TIMEOUT (pid:8924)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-02 19:55:23 +0800] [8924] [INFO] Worker exiting (pid: 8924)
+[2016-11-02 19:55:23 +0800] [11458] [INFO] Booting worker with pid: 11458
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD' for column 'title' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE5\\xBB\\xBA\\xE8\\xA1\\x8C...' for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE5\\xBB\\xBA\\xE8\\xA1\\x8C...' for column 'content' at row 1")
+  result = self._query(query)
+[2016-11-02 22:13:27,115] ERROR in app: Exception on /blog/add [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 961, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 998, in _read_bytes
+    2013, "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/__init__.py", line 51, in function
+    if current_user().id != 1:
+  File "/root/blog/routes/__init__.py", line 25, in current_user
+    u = User.query.get(uid)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 831, in get
+    return self._get_impl(ident, loading.load_on_ident)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 864, in _get_impl
+    return fallback_fn(self, key)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/loading.py", line 219, in load_on_ident
+    return q.one()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 2718, in one
+    ret = list(self)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 2761, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 2776, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 961, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 998, in _read_bytes
+    2013, "Lost connection to MySQL server during query")
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query') [SQL: 'SELECT users.id AS users_id, users.username AS users_username, users.password AS users_password, users.avatar AS users_avatar, users.created_time AS users_created_time \nFROM users \nWHERE users.id = %(param_1)s'] [parameters: {'param_1': 1}]
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE6\\x8E\\x8F\\xE7\\xB2\\xAA...' for column 'sort' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD...' for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD' for column 'content' at row 1")
+  result = self._query(query)
+[2016-11-02 22:23:00 +0800] [11458] [INFO] Worker exiting (pid: 11458)
+[2016-11-02 22:23:00 +0800] [8566] [INFO] Handling signal: term
+[2016-11-02 22:23:01 +0800] [8566] [INFO] Shutting down: Master
+[2016-11-02 22:23:54 +0800] [12603] [INFO] Starting gunicorn 19.6.0
+[2016-11-02 22:23:54 +0800] [12603] [INFO] Listening at: http://0.0.0.0:80 (12603)
+[2016-11-02 22:23:54 +0800] [12603] [INFO] Using worker: sync
+[2016-11-02 22:23:54 +0800] [12614] [INFO] Booting worker with pid: 12614
+[2016-11-02 22:26:21 +0800] [12603] [INFO] Handling signal: hup
+[2016-11-02 22:26:21 +0800] [12603] [INFO] Hang up: Master
+[2016-11-02 22:26:21 +0800] [12661] [INFO] Booting worker with pid: 12661
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD' for column 'title' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD...' for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD' for column 'content' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD...' for column 'title' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE6\\x8E\\x8F\\xE7\\xB2\\xAA...' for column 'sort' at row 1")
+  result = self._query(query)
+[2016-11-02 22:45:53,867] ERROR in app: Exception on /blog/xin [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 961, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 998, in _read_bytes
+    2013, "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/blog.py", line 10, in user_index
+    current = current_user()
+  File "/root/blog/routes/__init__.py", line 25, in current_user
+    u = User.query.get(uid)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 831, in get
+    return self._get_impl(ident, loading.load_on_ident)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 864, in _get_impl
+    return fallback_fn(self, key)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/loading.py", line 219, in load_on_ident
+    return q.one()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 2718, in one
+    ret = list(self)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 2761, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 2776, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 961, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 998, in _read_bytes
+    2013, "Lost connection to MySQL server during query")
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query') [SQL: 'SELECT users.id AS users_id, users.username AS users_username, users.password AS users_password, users.avatar AS users_avatar, users.created_time AS users_created_time \nFROM users \nWHERE users.id = %(param_1)s'] [parameters: {'param_1': 1}]
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE6\\xB5\\x8B\\xE8\\xAF\\x95' for column 'title' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE6\\xB5\\x8B\\xE8\\xAF\\x95...' for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE6\\xB5\\x8B\\xE8\\xAF\\x95' for column 'content' at row 1")
+  result = self._query(query)
+[2016-11-02 22:48:02 +0800] [12661] [INFO] Worker exiting (pid: 12661)
+[2016-11-02 22:48:02 +0800] [12603] [INFO] Handling signal: term
+[2016-11-02 22:48:02 +0800] [12603] [INFO] Shutting down: Master
+[2016-11-02 22:49:50 +0800] [13534] [INFO] Starting gunicorn 19.6.0
+[2016-11-02 22:49:50 +0800] [13534] [INFO] Listening at: http://0.0.0.0:80 (13534)
+[2016-11-02 22:49:50 +0800] [13534] [INFO] Using worker: sync
+[2016-11-02 22:49:50 +0800] [13545] [INFO] Booting worker with pid: 13545
+[2016-11-02 22:50:00,298] ERROR in app: Exception on /blog/add [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/__init__.py", line 51, in function
+    if current_user().id != 1:
+AttributeError: 'NoneType' object has no attribute 'id'
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD' for column 'title' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD...' for column 'summary' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD' for column 'content' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE6\\x8E\\x8F\\xE7\\xB2\\xAA...' for column 'sort' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD...' for column 'content' at row 1")
+  result = self._query(query)
+/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py:166: Warning: (1366, "Incorrect string value: '\\xE4\\xBD\\xA0\\xE5\\xA5\\xBD' for column 'username' at row 1")
+  result = self._query(query)
+[2016-11-03 00:01:18,855] ERROR in app: Exception on /user/login [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1267, "Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1988, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1641, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1544, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.4/dist-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1639, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.4/dist-packages/flask/app.py", line 1625, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/blog/routes/user.py", line 28, in login
+    user = User.query.filter_by(username=u.username).first()
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 2659, in first
+    ret = list(self[0:1])
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 2457, in __getitem__
+    return list(res)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 2761, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/orm/query.py", line 2776, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 914, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1010, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1146, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1341, in _handle_dbapi_exception
+    exc_info
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 202, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/util/compat.py", line 185, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/base.py", line 1139, in _execute_context
+    context)
+  File "/usr/local/lib/python3.4/dist-packages/sqlalchemy/engine/default.py", line 450, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 835, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1019, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1302, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 981, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.InternalError: (pymysql.err.InternalError) (1267, "Illegal mix of collations (latin1_swedish_ci,IMPLICIT) and (utf8_general_ci,COERCIBLE) for operation '='") [SQL: 'SELECT users.id AS users_id, users.username AS users_username, users.password AS users_password, users.avatar AS users_avatar, users.created_time AS users_created_time \nFROM users \nWHERE users.username = %(username_1)s \n LIMIT %(param_1)s'] [parameters: {'username_1': '你好', 'param_1': 1}]
+[2016-11-03 00:29:48 +0800] [13545] [INFO] Worker exiting (pid: 13545)
+[2016-11-03 00:29:48 +0800] [13534] [INFO] Handling signal: term
+[2016-11-03 00:29:48 +0800] [13534] [INFO] Shutting down: Master
+[2016-11-03 00:30:08 +0800] [13973] [INFO] Starting gunicorn 19.6.0
+[2016-11-03 00:30:08 +0800] [13973] [INFO] Listening at: http://0.0.0.0:80 (13973)
+[2016-11-03 00:30:08 +0800] [13973] [INFO] Using worker: sync
+[2016-11-03 00:30:08 +0800] [13984] [INFO] Booting worker with pid: 13984
+[2016-11-03 01:14:55 +0800] [13973] [INFO] Handling signal: hup
+[2016-11-03 01:14:55 +0800] [13973] [INFO] Hang up: Master
+[2016-11-03 01:14:55 +0800] [14195] [INFO] Booting worker with pid: 14195
+[2016-11-03 09:41:08 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:14195)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-03 09:41:08 +0800] [14195] [INFO] Worker exiting (pid: 14195)
+[2016-11-03 09:41:08 +0800] [15385] [INFO] Booting worker with pid: 15385
+[2016-11-03 11:49:20 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:15385)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-03 11:49:20 +0800] [15385] [INFO] Worker exiting (pid: 15385)
+[2016-11-03 11:49:20 +0800] [16205] [INFO] Booting worker with pid: 16205
+[2016-11-03 21:56:41 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:16205)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-03 21:56:41 +0800] [16205] [INFO] Worker exiting (pid: 16205)
+[2016-11-03 21:56:41 +0800] [19400] [INFO] Booting worker with pid: 19400
+[2016-11-03 22:18:07 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:19400)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-03 22:18:07 +0800] [19400] [INFO] Worker exiting (pid: 19400)
+[2016-11-03 22:18:07 +0800] [19411] [INFO] Booting worker with pid: 19411
+[2016-11-04 11:22:57 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:19411)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-04 11:22:57 +0800] [19411] [INFO] Worker exiting (pid: 19411)
+[2016-11-04 11:22:57 +0800] [23606] [INFO] Booting worker with pid: 23606
+[2016-11-04 14:24:13 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:23606)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-04 14:24:13 +0800] [23606] [INFO] Worker exiting (pid: 23606)
+[2016-11-04 14:24:13 +0800] [24876] [INFO] Booting worker with pid: 24876
+[2016-11-04 15:02:38 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:24876)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-04 15:02:38 +0800] [24876] [INFO] Worker exiting (pid: 24876)
+[2016-11-04 15:02:38 +0800] [25292] [INFO] Booting worker with pid: 25292
+[2016-11-04 15:03:26 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:25292)
+[2016-11-04 15:03:26 +0800] [25292] [INFO] Worker exiting (pid: 25292)
+[2016-11-04 15:03:26 +0800] [25299] [INFO] Booting worker with pid: 25299
+[2016-11-04 15:03:57 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:25299)
+[2016-11-04 15:03:57 +0800] [25299] [INFO] Worker exiting (pid: 25299)
+[2016-11-04 15:03:57 +0800] [25307] [INFO] Booting worker with pid: 25307
+[2016-11-04 15:04:28 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:25307)
+[2016-11-04 15:04:28 +0800] [25307] [INFO] Worker exiting (pid: 25307)
+[2016-11-04 15:04:28 +0800] [25311] [INFO] Booting worker with pid: 25311
+[2016-11-04 16:01:57 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:25311)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-04 16:01:57 +0800] [25311] [INFO] Worker exiting (pid: 25311)
+[2016-11-04 16:01:57 +0800] [25713] [INFO] Booting worker with pid: 25713
+[2016-11-04 16:02:28 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:25713)
+[2016-11-04 16:02:28 +0800] [25713] [INFO] Worker exiting (pid: 25713)
+[2016-11-04 16:02:29 +0800] [25723] [INFO] Booting worker with pid: 25723
+[2016-11-04 22:40:30 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:25723)
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-04 22:40:30 +0800] [25723] [INFO] Worker exiting (pid: 25723)
+[2016-11-04 22:40:30 +0800] [28080] [INFO] Booting worker with pid: 28080
+[2016-11-05 00:17:04 +0800] [13973] [CRITICAL] WORKER TIMEOUT (pid:28080)
+[2016-11-05 00:17:04 +0800] [28080] [INFO] Worker exiting (pid: 28080)
+[2016-11-05 00:17:04 +0800] [29082] [INFO] Booting worker with pid: 29082
+[2016-11-05 00:54:40 +0800] [13973] [INFO] Handling signal: term
+/usr/local/lib/python3.4/dist-packages/sqlalchemy/sql/compiler.py:575: SAWarning: Can't resolve label reference 'created_time desc'; converting to text() (this warning may be suppressed after 10 occurrences)
+  util.ellipses_string(element.element))
+[2016-11-05 00:54:40 +0800] [29082] [INFO] Worker exiting (pid: 29082)
+[2016-11-05 00:54:40 +0800] [13973] [INFO] Shutting down: Master
